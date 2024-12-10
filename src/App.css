@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.App {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "sidebar background" 
+  "sidebar projects"
+  "sidebar skills"
+  "sidebar footer";
+}
+
+
+/* section.button {
+  display: flex;
+  justify-content: center;
+  
+  } */
+  
+  h1 {
+    background: linear-gradient(red, violet);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  
+  
+  
+  /* -------------------------------------------------------------------SIDEBAR------------------------------------------------------------------- */
+  .profile-picture {
+    background-color: red;
+    border-radius: 75px;
+    width: 130px;
+    height: 130px;
+    background-image: linear-gradient(to right, rgb(96, 66, 166), rgb(181, 78, 145));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .profile-image {
+    border-radius: 75px;
+  }
+  
+  .sidebar {
+    top: 0;
+    left: 0;
+    position: sticky;
+    align-self: start;
+    min-height: 100vh;
+    grid-area: sidebar;
+    background-color: rgb(49, 35, 79);
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .sidebar ul {
+    
+    margin-top: 50px;
+    
+  }
+  
+  .sidebar ul li {
+    margin: 25px;
+    
+  }
+  
+  .sidebar ul li a {
+    position: relative;
+    color: plum;
+    font-size: medium;
+    font-weight: bolder;
+    padding-bottom: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1.5px solid gray;
+    
+    transition: all .25s ease-in-out;
+    
+  }
+  
+  .sidebar ul li a:hover, .sidebar ul li a:focus {
+    color: lightgrey;
+    
+  }
+  
+  .sidebar ul li a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2.5px;
+    background-color: lightgray;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: all .25s ease-in-out;
+  }
+  
+  .sidebar ul li a:hover::before {
+    transform: scaleX(1);
+    background-image: linear-gradient(to right, rgb(96, 66, 166), rgb(181, 78, 145));
+  }
+  
+  
+  
+  /* -------------------------------------------------------------------MAIN SECTION------------------------------------------------------------------- */
+  
+  /* .main {
+    grid-area: main;
+    background-color: rgb(94, 66, 166);
+    } */
+/*     
+    p {
+      background: black;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+     */
+    
+    
+    
+    /* ----------------------------------------------------------------BACKGROUND SECTION---------------------------------------------------------------- */
+    .background {
+      grid-area: background;
+      background-color: rgb(94, 66, 166);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 40px;
+      gap: 20px;
+    }
+
+    p.background_p {
+      color: plum;
+      font-size: larger;
+      font-weight: bolder;
+    
+    }
+
+    section.button {
+      display: flex;
+      gap: 20px;
+    }
+
+    .background button {
+      width: 125px;
+      height: 50px;
+      border-radius: 25px;
+      border: 2px solid violet;
+      background-color: transparent;
+      color: violet;
+      }
+    
+      .background button a{
+        color: violet;
+      }
+    
+    
+    
+    /* ----------------------------------------------------------------PROJECTS SECTION---------------------------------------------------------------- */
+/* .projects {
+  grid-area: projects;
+  background-color: rgb(94, 66, 166);
+  height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding-left: 40px;
+} */
+
+.projects {
+  height: 100vh;
+  grid-area: projects;
+  background: rgb(79, 82, 181);
+}
+
+
+.project-one {
+  display: flex;
+  flex-direction: row
+}
+
+.project-img {
+  background-color: red;
+  width: 200px;
+  height: 220px;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+  gap: 12px;
+}
+
+.project-content p {
+  font-size: small;
+  color: white;
+  
+}
+h2.project-h {
+  background: linear-gradient(rgb(54, 156, 186), rgb(252, 203, 79));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+button.project-button {
+  width: 125px;
+  height: 50px;
+  border-radius: 25px;
+  border: 2px solid violet;
+  background-color: transparent;
+  color: violet;
+  }
+
+  a.care-live {
+    color: white;
+  }
+
+
+/* ----------------------------------------------------------------SKILLS SECTION---------------------------------------------------------------- */
+.skills {
+  grid-area: skills;
+  background-color: rgb(94, 66, 166);
+  height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding-left: 40px;
+}
+
+
+
+
+/* ----------------------------------------------------------------FOOTER SECTION---------------------------------------------------------------- */
+.footer {
+  grid-area: footer;
+  background-color: rgb(94, 66, 166);
+  height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding-left: 40px;
+}
