@@ -45,7 +45,7 @@ function App() {
         <div className="background_contact_me">
           <section className="button">
             <button>
-              <a href="#"> Contact Me! </a>
+              <a href="#contact"> Contact Me! </a>
             </button>
             {/* <button className="code"> Code </button>
             <button className="live"> Live </button> */}
@@ -56,8 +56,7 @@ function App() {
       <section className="projects" id="projects">
         <ul>
           <li className="project-one">
-            <img src={projectOne} height="320" width="300"></img>
-            {/* <div className="project-img"></div> */}
+            <img src={projectOne} height="320" width="300" alt=""></img>
             <section className="project-content">
               <h2 className="project-h"> Care Village </h2>
               <p className="project_p">
