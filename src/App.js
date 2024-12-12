@@ -1,6 +1,7 @@
 import "./App.css";
 import image from "./profile2.jpg";
 import projectOne from "./projectOne.png";
+import projectTwo from "./projectTwo.png";
 
 function App() {
   return (
@@ -84,6 +85,30 @@ function App() {
             </section>
           </li>
         </ul>
+        <ul>
+          <li className="project-two">
+                      <img className="P2" src={projectTwo} height="320" width="300" alt=""></img>
+
+                      <section className="project-content">
+              <h2 className="project-R"> Recipe Finder </h2>
+              <p className="project_p">
+               This is a recipe finder which gives you kitchen food ideas with the list of ingredients and cooking instructions. It has an api incorporated along with some basic css styling.
+              </p>
+              <div className="contact-me">
+                <button className="project-button">
+                  <a
+                    href="https://zippy-horse-6f8f0e.netlify.app/"
+                    className="care-live"
+                  >
+                    {" "}
+                    Live Site!{" "}
+                  </a>
+                </button>
+              </div>
+            </section>
+          </li>
+        </ul>
+    
       </section>
 
       <section className="skills">

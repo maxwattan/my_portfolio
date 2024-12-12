@@ -30,8 +30,7 @@
     -webkit-text-fill-color: transparent;
   }
   
-  
-  
+
   
   /* -------------------------------------------------------------------SIDEBAR------------------------------------------------------------------- */
   .profile-picture {
@@ -182,14 +181,18 @@ justify-content: center;
 padding-left: 40px;
 } */
 
+
 .projects {
   height: 100vh;
   grid-area: projects;
   background: rgb(79, 82, 181);
 }
 
-
 .project-one {
+  display: flex;
+  flex-direction: row
+}
+.project-two {
   display: flex;
   flex-direction: row
 }
@@ -199,6 +202,10 @@ padding-left: 40px;
   width: 200px;
   height: 220px;
 }
+
+/* img.P2 {
+border-radius: 40%;
+ } */
 
 .project-content {
   display: flex;
@@ -219,6 +226,12 @@ h2.project-h {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+h2.project-R {
+  background: linear-gradient(red, rgb(65, 224, 208));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 button.project-button {
   width: 125px;
@@ -233,6 +246,10 @@ button.project-button {
     color: white;
   }
 
+  div.contact-me {
+    display: flex;
+
+  }
 
 /* ----------------------------------------------------------------SKILLS SECTION---------------------------------------------------------------- */
 .skills {
